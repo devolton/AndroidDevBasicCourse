@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/colorWhite"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/preview"
+        android:contentDescription="Image preview"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/pickImg"
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@color/colorGreen"
+        android:drawableEnd="@drawable/ic_attachment"
+        android:drawableRight="@drawable/ic_attachment"
+        android:paddingEnd="@dimen/_4sdp"
+        android:paddingRight="@dimen/_4sdp"
+        android:text="PICK Image"
+        android:textAllCaps="true"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/uploadImg"
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/colorDarkRed"
+        android:text="Upload"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:drawableEnd="@drawable/ic_upload"
+        android:paddingEnd="@dimen/_4sdp"
+        android:paddingRight="@dimen/_4sdp"
+        android:drawableRight="@drawable/ic_attachment"
+        />
+
+    <com.crystal.crystalpreloaders.widgets.CrystalPreloader
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:crs_pl_style="circular"
+        app:crs_pl_size="very_small"
+        android:visibility="invisible"
+        app:crs_pl_bg_color="@color/colorBlueMidnight"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+
+
+</LinearLayout>
